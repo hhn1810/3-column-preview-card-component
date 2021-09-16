@@ -1,0 +1,155 @@
+:root {
+    --orange-color: hsl(31, 77%, 52%);
+    --cyan-color: hsl(184, 100%, 22%);
+    --dark-cyan-color: hsl(179, 100%, 13%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 100px 20px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__logo {
+    width: 50px;
+    margin-bottom: 3rem;
+}
+
+.card__content {}
+
+.card__title {
+    text-transform: uppercase;
+    font-family: 'Big Shoulder', sans-serif;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.card__desc {
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.card__btn {
+    outline: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    transition: all ease-in-out .3s;
+}
+
+.card--orange {
+    background-color: var(--orange-color);
+}
+
+.card--cyan {
+    background-color: var(--cyan-color);
+}
+
+.card--dark-cyan {
+    background-color: var(--dark-cyan-color);
+}
+
+.card__btn--orange {
+    color: var(--orange-color);
+    transition: all ease-in-out .3s;
+}
+
+.card__btn--cyan {
+    color: var(--cyan-color);
+}
+
+.card__btn--dark-cyan {
+    color: var(--dark-cyan-color);
+}
+
+.card__btn--orange:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: var(--orange-color);
+    color: hsl(0, 0%, 95%);
+}
+
+.card__btn--cyan:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: var(--cyan-color);
+    color: hsl(0, 0%, 95%);
+}
+
+.card__btn--dark-cyan:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: var(--dark-cyan-color);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 90em) {
+    .cards {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .card {
+        flex-basis: 33.33333%;
+    }
+    .card__logo {}
+    .card__content {}
+    .card__title {
+        font-size: 3rem;
+    }
+    .card__desc {
+        margin-bottom: 6rem;
+    }
+    .card__btn {}
+}
